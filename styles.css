@@ -1,0 +1,144 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
+  max-width: 200px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+form {
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+form:hover {
+  transform: scale(1.05);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #f1f3f5;
+  color: #495057;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 5px;
+}
+
+label input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.task-item {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  margin-bottom: 10px;
+  padding: 15px;
+  cursor: grab;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-all;
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-item.completed {
+  background-color: #e9ecef;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.priority-high {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: #ffc107;
+}
+
+.priority-low {
+  color: #28a745;
+}
+
+.delete {
+  color: #dc3545;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete:hover {
+  color: #bd2130;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  form {
+    max-width: 100%;
+  }
+
+  .task-item {
+    max-width: 100%;
+  }
+}
